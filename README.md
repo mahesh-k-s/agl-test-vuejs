@@ -53,7 +53,7 @@ npm test
 
 ## Output
 
-
+![alt tag](https://github.com/mahesh-k-s/agl-test-vuejs/blob/master/src/assets/output-screenshot.png)
 
 ## License
 
