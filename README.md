@@ -53,7 +53,7 @@ npm test
 
 ## Output
 
-![alt tag](https://github.com/mahesh-k-s/agl-test/blob/master/assets/output-screenshot.png)
+
 
 ## License
 
@@ -61,4 +61,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Related Topics
 
-Same project has been developed using simple javascript in github [AGL Test Code - Cat Owners developed in JS](https://github.com/mahesh-k-s/agl-test)
+* Same project has been developed using simple javascript in github [AGL Test Code - Cat Owners developed in JS](https://github.com/mahesh-k-s/agl-test)
+* Instead of using css styles we can also integrate external styling sheets like sass/scss in VueJs project. How to is mentioned in my blog on the same [Using SASS/SCSS in Vue.js 2] (https://medium.com/@mahesh.ks/using-sass-scss-in-vue-js-2-d472af0facf9)
