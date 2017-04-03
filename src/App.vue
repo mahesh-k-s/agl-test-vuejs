@@ -19,12 +19,18 @@ export default {
 </script>
 
 <style>
+body {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    color: steelblue;
+    background-color: beige;
+}
+h1{
+  margin:1.5em;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="cats">
     <ul id="example-1">
       <li v-for="male in males">
         {{ male.name }}
@@ -88,21 +88,52 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+div.cats {
+  margin: 3em;
+  width: 30em;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+    counter-reset: li;
+    list-style: none;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
 }
 
 li {
-  display: inline-block;
-  margin: 0 10px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    margin-left: 1em;
+    background: #FFF;
+    color: #444;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
 }
 
-a {
-  color: #42b983;
+li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #FFF;
 }
 </style>
