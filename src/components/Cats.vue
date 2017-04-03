@@ -1,11 +1,13 @@
 <template>
   <div class="cats">
-    <ul id="example-1">
+    <h2>MALE</h2>
+    <ul id="male">
       <li v-for="male in males">
         {{ male.name }}
       </li>
     </ul>
-    <ul id="example-2">
+    <h2>FEMALE</h2>
+    <ul id="female">
       <li v-for="female in females">
         {{ female.name }}
       </li>
@@ -66,19 +68,13 @@ export default {
       return sortList.sort(function(a,b) {return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0);} );
     }
   },
-  watch: {
-    watchMe: function() {
-      console.log("watch");
-      this.fetchData();
-    }
-  },
+  
   created() {
     console.log("data")
   },
   data() {
     console.log("data")
     return {
-      watchMe: "",
       females: [],
       males: []
     };
@@ -92,7 +88,10 @@ div.cats {
   margin: 3em;
   width: 30em;
 }
-
+h2{
+    color: orange;
+    font-weight: 100;
+}
 ul {
     counter-reset: li;
     list-style: none;
