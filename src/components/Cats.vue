@@ -21,15 +21,13 @@ const APIDATA = [];
 
 
 export default {
-  name: 'hello',
+  name: 'cats',
   mounted() {
-    console.log("mounted")
     this.fetchData()
   },
   methods: {
     fetchData: function() {
       var self = this;
-      console.log("fetchData")
       return window.fetch(APIURL)
         .then(response=> response.json())
         .then(responsejson => {
@@ -41,8 +39,6 @@ export default {
 
     },
     processData: function(data) {
-      console.log(data)
-      console.log("processdata")
       var self = this;
       if (data == undefined) return;
         var sortedCatsList = {
@@ -56,8 +52,7 @@ export default {
         
     },
     getAllCats: function(filtereddata){
-      console.log("getAllCats")
-      if (filtereddata == undefined) return [];
+        if (filtereddata == undefined) return [];
         var sortList = [];
         filtereddata.map(item => {
           var catArr =  (item.pets || []).filter(pet => pet.type === 'Cat');
@@ -69,11 +64,7 @@ export default {
     }
   },
   
-  created() {
-    console.log("data")
-  },
   data() {
-    console.log("data")
     return {
       females: [],
       males: []
